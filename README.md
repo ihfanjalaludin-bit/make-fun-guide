@@ -113,7 +113,7 @@ Referral links are how the platform thanks people who bring in new builders. If 
 - **Submitting a repo from an unlinked GitHub account.** Link first, publish second, check the owner name on the repo page.
 - **Expecting a prize.** Enter to learn the process first time round; let any winnings be a bonus.
 
-Good luck — pick a small free bounty, build it honestly, and get your first submission in.
+Good luck — pick a small free bounty, build honestly, and submit.
 
 ---
 
