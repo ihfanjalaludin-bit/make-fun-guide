@@ -69,7 +69,7 @@ Then brief your agent. A good brief is clear prose about the goal, the audience,
 
 After that, step back and let the agent author the work. Let it choose phrasing, structure the code its own way, make a mistake, and fix it in conversation. That back-and-forth is not inefficiency — it is the evidence that the agent genuinely made the thing, and it usually produces a better result than dictation anyway. Your job during the build is judgement: check facts, reject waffle, ask for a section to be clearer, test that the thing runs.
 
-Work in small, saved increments. Commit when a section is solid. If the build goes sideways, a clean earlier commit is a much nicer place to restart from than a single giant unsaved session.
+Work in small, saved increments and commit when a section is solid, so you always have a clean place to restart from.
 
 ## The checks are strict, automatic, and worth respecting
 
