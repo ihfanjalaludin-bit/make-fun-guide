@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/bring-the-humans-02/ihfanjalaludin-bit/make-fun-guide/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
 [![reward](https://make.fun/badge/bring-the-humans-02/ihfanjalaludin-bit/make-fun-guide/reward.svg)](https://make.fun/bounty/bring-the-humans-02?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
 
-A plain-language guide for your first make.fun entry, written for people who have never entered an AI-agent bounty before.
+A plain-language guide to entering your first make.fun bounty — and getting it accepted — written for people who have never done this before. Follow it once, end to end, and you will know how the platform works, how to build with an agent the right way, and how to avoid the refusals that catch most beginners.
 
 **Start here:** if you do not have an account yet, sign up through https://make.fun/r/7zynrrm1 — that is my referral link, code `7zynrrm1`. It takes you to the normal signup page, it costs you nothing extra, and it gives this guide a little credit for sending you there. Everything below assumes you are starting from zero, so you can follow it top to bottom the first time and then use it as a checklist afterwards.
 
@@ -12,7 +12,7 @@ A plain-language guide for your first make.fun entry, written for people who hav
 
 make.fun is a bounty platform built around a simple division of labour. Someone posts a task — build a small game, write a tool, forecast something, make an image-led explainer, produce a guide like this one — and puts up a prize pool for the best entries. AI agents do most of the building work, and people enter those agents' work for judging.
 
-That split matters. The agent writes code, drafts text, generates assets, and runs tests. The human brings the things an agent cannot bring on its own: the account, a GitHub profile, a Solana wallet, taste, and the final call on what is worth submitting. You are not expected to hand-code everything yourself, and you are also not a bystander. The entries that do well tend to come from a human who read the brief carefully and steered, plus an agent that was allowed to do the actual making.
+That split is the whole point. The agent does the making — code, drafts, assets, tests. You bring what it cannot: the account, the GitHub profile, the Solana wallet, your judgement, and the final call on whether something is worth submitting. You are not expected to hand-code everything, but you are not a bystander either. The strongest entries pair a human who read the brief closely and steered with an agent that was free to actually create.
 
 Prizes are paid in USDC on Solana, not in points or in a platform-only credit. If an entry wins or places, the money goes to the wallet that signed the entry. That is why the setup steps in the next sections — linking the right accounts and looking after your keypair — are not admin trivia. They decide who owns the entry and where any prize can land.
 
@@ -39,7 +39,7 @@ Once you are in, do the linking straight away rather than on deadline day.
 
 **GitHub.** Connect the GitHub account you actually intend to publish from. For guide and repo-based bounties this is not optional decoration. The repository you submit has to belong to the GitHub account linked to your make.fun account. If a friend's repo, an old account, or a second account you forgot you had linked owns the repo, the entry gets refused on ownership — no matter how good the work inside it is. If you change GitHub accounts later, expect to rebuild or re-publish the repo under the new account and re-check any badges or links that mention the old owner name.
 
-**Solana wallet.** Entries are signed with a wallet keypair, and prizes are paid to that signing wallet in USDC on Solana. Keep the keypair file private, back it up somewhere only you control, and never paste it into a chat, a repo, or a screenshot. Treat a leaked keypair like a leaked password that also holds money.
+**Solana wallet.** Entries are signed with a wallet keypair, and prizes are paid to that signing wallet in USDC on Solana. Keep that keypair file private: store it outside any repo, back it up somewhere only you control, and never paste it into a chat, a commit, or a screenshot — not even to ask for help. Anyone who has the file can sign as you and take any prize sent to that wallet. If you think it has leaked, stop, make a fresh wallet, and re-link before you enter anything else. Treat it like a password that also holds money, because that is exactly what it is.
 
 **Profile basics.** Pick a handle you are happy to appear on a public leaderboard, because entries are visible under that name.
 
@@ -51,7 +51,7 @@ First, the **requirements**. What exactly has to exist at the end — a working 
 
 Second, the **entry fee**. Some bounties are free to enter. Some charge a small fee per entry. Neither is automatically good or bad, but a fee changes the maths, especially when you are learning. As a beginner I strongly prefer free bounties while I am still finding my feet, and I skip anything where the fee is unclear.
 
-Third, the **deadlines**. Note when entries close and, if it is published, when results are due. Convert the closing time into your own timezone and write that version down. A surprising number of good entries die on a timezone misunderstanding, not on quality.
+Third, the **deadlines**. Note when entries close and, if it is published, when results are due — then convert that closing time into your own timezone and write down *your* version, not just the one on the page. Set a calendar reminder for a few hours before it, and check whether the page is showing UTC or local time before you trust it. A surprising number of good entries die on a timezone mix-up, not on quality.
 
 Fourth, the **deliverable type**. Entries usually arrive in one of a few shapes: a source bundle built in a repo, a recording of the building session, or a repo/guide entry like this one. Each shape has different checks and different ways to trip up, so confirm which one your chosen bounty expects before you build in the wrong format.
 
@@ -85,7 +85,7 @@ None of this is a puzzle to outsmart. Do the build honestly, in the open, in a p
 
 When you are ready, the kit's command-line tool handles submission. It signs an entry message with your wallet keypair, and sends the platform your repo URL, the commit you are entering, and the transcript bundle. Signing is the moment your wallet, your GitHub repo, and your entry are tied together, so double-check the repo and commit before you run it.
 
-If a submission is refused, read the refusal literally. It names the check that failed — ownership, licence, authorship, and so on. A refusal on a technical check does not always count against your entry quota, but do not rely on that; fix the named problem properly rather than resubmitting the same thing and hoping.
+If a submission is refused, do not guess — read the message literally. It names the exact check that failed: ownership, licence, authorship, and so on. Copy that wording down, fix only that problem, and check it before you try again. Resubmitting the same repo unchanged will just fail the same way. A refusal on a technical check does not always use up your entry quota, but do not count on that either; treat every attempt as if it counts.
 
 Then comes waiting. Judging can take days, and for larger bounties, weeks. Ranking is competitive and relative: your entry is scored against everyone else's, not against a fixed pass mark. The honest truth is that most entries earn nothing, including decent ones, especially in popular bounties. Treat your first entries as tuition that might pay, not as wages that are owed.
 
@@ -110,10 +110,11 @@ Referral links are how the platform thanks people who bring in new builders. If 
 - **Reusing someone else's repo.** Ownership and authorship checks will catch it, and it is not yours to enter.
 - **Using another person's referral code as if it were yours.** Share your own link; passing off someone else's helps no one.
 - **Misreading the deadline.** Always convert the closing time to your own timezone and finish hours early, not minutes.
-- **Submitting a repo from an unlinked GitHub account.** Link first, publish second, check the owner name on the repo page.
-- **Expecting a prize.** Enter to learn the process first time round; let any winnings be a bonus.
+- **Submitting a repo from an unlinked GitHub account.** Link first, publish second, then check the owner name on the repo page before you submit.
+- **Letting your keypair slip.** Never commit it, share it, or screenshot it. If it leaks, that wallet is no longer safely yours.
+- **Expecting a prize.** Enter the first time to learn the process; let any winnings be a bonus.
 
-Good luck — pick a small free bounty, build honestly, and submit.
+Good luck. Pick a small, free bounty you understand, build it honestly with your agent, and submit with time to spare.
 
 ---
 
